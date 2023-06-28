@@ -1,0 +1,94 @@
+@font-face {
+    font-family: quackyFont;
+    src: url('EARTHQUAKE.TTF') format('truetype');
+  }
+  .title {
+    font-family: quackyFont, Arial, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #444444;
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2; /* Adjust the z-index value */
+  }
+/* Update CSS for the pop-up */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #808080;
+  padding: 10px;
+  border: 1px solid #ddd;
+  display: none;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.popup-content {
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+/* Update CSS for the map container */
+#map {
+  width: 80%;
+  height: 100vh;
+  overflow: hidden;
+  float: right;
+}
+.btn-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('close_button.png');
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  background-color: #808080;
+
+}
+
+.legend {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legend-item span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+
+  
+
+  
+  

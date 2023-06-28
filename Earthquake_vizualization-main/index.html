@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scalable 2D World Map with TopoJSON and D3.js</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add any necessary styling for your map */
+    #map {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="map">
+    <div id="popup" class="popup">
+      <div id="popupContent" class="popup-content"></div>
+      <div>
+        <span class="close">+</span>
+      </div>
+    </div>
+    <div class="title">Earthquakes</div>
+  </div>
+  <div class="legend">
+    <div class="legend-item">
+      <span style="background-color: green;"></span>
+      Magnitude 7 or lower
+    </div>
+    <div class="legend-item">
+      <span style="background-color: yellow;"></span>
+      Magnitude 7+
+    </div>
+    <div class="legend-item">
+      <span style="background-color: orange;"></span>
+      Magnitude 8+
+    </div>
+    <div class="legend-item">
+      <span style="background-color: red;"></span>
+      Magnitude 9+
+    </div>
+  </div>
+  <script src="script_test.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
